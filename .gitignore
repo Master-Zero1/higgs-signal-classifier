@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/*
+!data/.gitkeep
+
+#python
+__pycache__/
+*.pyc
+*.pyo
+.
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
