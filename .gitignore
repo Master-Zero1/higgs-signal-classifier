@@ -226,9 +226,6 @@ data/processed/*
 data/output/*
 !data/output/.gitkeep
 
-models/*
-!models/.gitkeep
-
 #python
 __pycache__/
 *.pyc
@@ -241,6 +238,7 @@ __pycache__/
 # VS Code
 .vscode/
 
-# models
+#models
+models/*
+!models/.gitkeep
 *.pkl
-models/
