@@ -217,8 +217,14 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-data/*
-!data/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/output/*
+!data/output/.gitkeep
 
 #python
 __pycache__/
@@ -231,3 +237,7 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+# models
+*.pkl
+models/
