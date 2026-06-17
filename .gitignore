@@ -226,6 +226,9 @@ data/processed/*
 data/output/*
 !data/output/.gitkeep
 
+models/*
+!models/.gitkeep
+
 #python
 __pycache__/
 *.pyc
