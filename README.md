@@ -1,4 +1,4 @@
-<img width="829" height="12418" alt="image" src="https://github.com/user-attachments/assets/12fdd74b-205d-4216-a792-03ebfbb2a5ec" /><div align="center">
+<div align="center">
 
 # Higgs Signal Classification using XGBoost and SHAP
 
@@ -259,43 +259,18 @@ The highest performance was achieved using all 28 features
 │   │   ├── m_bb.png
 │   │   ├── m_jjj.png
 │   │   ├── m_jj.png
-│   │   ├── m_jlv.png
-│   │   ├── m_lv.png
-│   │   ├── m_wbb.png
-│   │   └── m_wwbb.png
+│   │   └── ...
 │   │
 │   ├── low_level_features/
 │   │   ├── jet 1 b-tag.png
 │   │   ├── jet 1 eta.png
 │   │   ├── jet 1 phi.png
-│   │   ├── jet 1 pt.png
-│   │   ├── jet 2 b-tag.png
-│   │   ├── jet 2 eta.png
-│   │   ├── jet 2_phi.png
-│   │   ├── jet 2 pt.png
-│   │   ├── jet 3 b-tag.png
-│   │   ├── jet 3 eta.png
-│   │   ├── jet 3 phi.png
-│   │   ├── jet 3 pt.png
-│   │   ├── jet 4 b-tag.png
-│   │   ├── jet 4 eta.png
-│   │   ├── jet 4 phi.png
-│   │   ├── jet 4 pt.png
-│   │   ├── lepton eta.png
-│   │   ├── lepton phi.png
-│   │   ├── lepton pt.png
-│   │   ├── missing energy magnitude.png
-│   │   └── missing energy phi.png
+│   │   └── ...
 |   |
 │   ├── signal vs background count.png
 |   ├── feature_correlation matrix.png
 │   ├── SHAP Summary Plot - Tuned XGBoost (28 features).png
-│   ├── SHAP Feature Importance Ranking (28 features).png
-|   ├── SHAP Summary Plot - High level features.png
-|   ├── SHAP Feature Importance Ranking (7 Features).png
-│   ├── Learning Curve - Tuned XGBoost.png
-|   ├── Training Time vs Dataset Size - learning curve.png
-│   └── Early-Stopping Iteration vs Dataset Size - learning curve.png
+│   └── ...
 │
 ├── models/
 │   ├── logistic_regression_21.pkl
