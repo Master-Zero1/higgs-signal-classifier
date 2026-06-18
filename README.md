@@ -6,6 +6,7 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-3.2.0-orange?style=flat-square)](https://xgboost.readthedocs.io)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.9.0-red?style=flat-square)](https://scikit-learn.org)
 [![SHAP](https://img.shields.io/badge/SHAP-Explainability-purple?style=flat-square)](https://shap.readthedocs.io)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 </div>
 
