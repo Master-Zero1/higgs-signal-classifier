@@ -145,6 +145,27 @@ An XGBoost model with the best parameter was trained on progressively larger sub
 | XGBoost (tuned) 7 features | 0.7955 |
 | XGBoost (tuned) 28 features | **0.8548** |
 
+**Comparision with Baldi et al. (2014)**
+
+To directly compare modern gradient boosting with the original study by Baldi et al. (2014), the models were evaluated using the same three feature partitions: **21 low-level features**, **7 high-level features**, and **all 28 features**.
+
+| Model | Low-Level (21) | High-Level (7) | All 28 |
+|------|---------------|---------------|--------|
+| Logistic Regression | 0.5944 | 0.6451 | 0.6831 |
+| BDT (Baldi et al., 2014) | 0.7300 | 0.7800 | 0.8100 |
+| Shallow Neural Network (Baldi et al., 2014) | 0.7330 | 0.7770 | 0.8160 |
+| XGBoost (Default) | 0.7265 | **0.7899** | 0.8240 |
+| **XGBoost (Tuned)** | **0.8005** | **0.7955** | **0.8548** |
+| Deep Neural Network (Baldi et al., 2014) | **0.8800** | **0.8000** | **0.8850** |
+
+> **Note:** Results reported for BDT, Shallow Neural Network, and Deep Neural Network are taken from **Baldi et al. (2014)**. The XGBoost models in this project were trained using the same feature partitions to enable a direct comparison.
+>
+> ### Key Takeaways
+
+- Tuned **XGBoost** outperforms the **2014 Boosted Decision Tree (BDT)** across all three feature subsets.
+- Using **all 28 features**, the tuned XGBoost model achieved a **Test AUC of 0.8548**, representing a substantial improvement over the original BDT baseline (**0.8100**).
+- The performance of tuned XGBoost approaches that of the **Deep Neural Network** reported by Baldi et al. (2014), while maintaining the advantages of a classical gradient boosting model, including faster training and greater interpretability through SHAP.
+
 **SHAP Feature Importance**
 
 **Top 5 Most Important Features (28 features)**
@@ -309,6 +330,11 @@ The highest performance was achieved using all 28 features
 └── README.md
 
 ```
+
+---
+
+## Conclusion
+Modern XGBoost substantially outperforms the original BDT or the shallow NN and very close results to the DNN reported by Baldi et al. while providing interpretable feature attributions through SHAP. The learning curve further demonstrates that predictive performance continues to improve with additional training data, although gains diminish at larger scales.
 
 ---
 
