@@ -1,4 +1,4 @@
-<div align="center">
+<img width="829" height="12418" alt="image" src="https://github.com/user-attachments/assets/12fdd74b-205d-4216-a792-03ebfbb2a5ec" /><div align="center">
 
 # Higgs Signal Classification using XGBoost and SHAP
 
@@ -9,6 +9,31 @@
 
 </div>
 
+---
+
+## Highlights
+
+- Dataset: ~11 Million HIGGS Events
+- Best Model: Tuned XGBoost
+- Test AUC: **0.8548**
+- Explainability: SHAP
+- Learning Curve Analysis up to 5M samples
+
+---
+
+## Table of Contents
+
+- Overview
+- Research Questions
+- Dataset
+- Methodology
+- Results
+- SHAP Analysis
+- Learning Curve
+- Key Findings
+- Repository Structure
+- References
+- 
 ---
 
 ## Overview
