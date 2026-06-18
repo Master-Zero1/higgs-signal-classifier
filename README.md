@@ -182,18 +182,21 @@ The physics - engineered features provide substantial discriminative power and o
 
 2. Combining feature sets produces the best performance.
 The highest performance was achieved using all 28 features
-**Final Test AUC: **0.8548
+
+**Final Test AUC:  0.8548**
 
 3. Hyperparameter tuning significantly improves performance
+
 | Feature | Default AUC | Tuned AUC |
-|---------|------------:|----------:|
+|---------|------------|----------|
 | 21 Features |	0.7265 | 0.8005 |
 | 7 Features | 0.7899 |	0.7955 |
 | 28 Features |	0.8240 | 0.8548 |
 
 4. Validation and test performance are consistent
+
 | Feature Set | Validation AUC | Test AUC |
-|---------|------------:|----------:|
+|---------|------------|----------|
 | 21 Features |	0.8007 | 0.8005 |
 | 7 Features | 0.7962 |	0.7955 |
 | 28 Features |	0.8547 | 0.8548 |
