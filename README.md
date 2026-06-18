@@ -161,7 +161,7 @@ To directly compare modern gradient boosting with the original study by Baldi et
 
 > **Note:** Results reported for BDT, Shallow Neural Network, and Deep Neural Network are taken from **Baldi et al. (2014)**. The XGBoost models in this project were trained using the same feature partitions to enable a direct comparison.
 >
-> ### Key Takeaways
+### Key Takeaways
 
 - Tuned **XGBoost** outperforms the **2014 Boosted Decision Tree (BDT)** across all three feature subsets.
 - Using **all 28 features**, the tuned XGBoost model achieved a **Test AUC of 0.8548**, representing a substantial improvement over the original BDT baseline (**0.8100**).
@@ -334,7 +334,7 @@ The highest performance was achieved using all 28 features
 ---
 
 ## Conclusion
-Modern XGBoost substantially outperforms the original BDT or the shallow NN and very close results to the DNN reported by Baldi et al. while providing interpretable feature attributions through SHAP. The learning curve further demonstrates that predictive performance continues to improve with additional training data, although gains diminish at larger scales.
+Modern XGBoost substantially outperforms the original BDT and Shallow NN, and approaches the Deep Neural Network reported by Baldi et al.. while providing interpretable feature attributions through SHAP. The learning curve further demonstrates that predictive performance continues to improve with additional training data, although gains diminish at larger scales.
 
 ---
 
@@ -343,7 +343,7 @@ Modern XGBoost substantially outperforms the original BDT or the shallow NN and 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<Master-Zero1>/higgs-signal-classifier.git
+git clone https://github.com/Master-Zero1/higgs-signal-classifier.git
 cd higgs-signal-classifier
 ```
 
