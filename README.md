@@ -62,12 +62,18 @@ This project investigates the classification of Higgs boson signal events from b
 - **High-Level Features - 7**
 
 ### Signal vs. Background Count
-![Signal vs background count](plots/signal%20vs%20background%20count.png)
+
+<p align="center">
+  <img src="plots/signal%20vs%20background%20count.png" alt="Signal vs Background Count" width="700">
+</p>
 
 The first 21 features correspond to detector-level measurements, while the remaining 7 are physics-derived variables constructed from combinations of low-level measurements. 
 
 ### Features correlations (low-level features and high level features)
-![Feature correlation](plots/feature_correlation%20matrix.png)
+
+<p align="center">
+  <img src="plots/feature_correlation%20matrix.png" alt="Feature Correlation Matrix" width="700">
+</p>
 
 ---
 
@@ -155,25 +161,35 @@ These results align with known physics expectations regarding Higgs boson decay 
 
 ### SHAP Summary Plot - (28 Features)
 
-![SHAP Summary](plots/SHAP%20Summary%20Plot%20-%20Tuned%20XGBoost%20(28%20features).png)
+<p align="center">
+  <img src="plots/SHAP%20Summary%20Plot%20-%20Tuned%20XGBoost%20(28%20features).png" alt="SHAP Summary Plot (28 Features)" width="700">
+</p>
 
 ### SHAP Feature Importance Ranking - (28 Features)
 
-![SHAP Importance](plots/SHAP%20Feature%20Importance%20Ranking%20(28%20features).png)
+<p align="center">
+  <img src="plots/SHAP%20Feature%20Importance%20Ranking%20(28%20features).png" alt="SHAP Feature Importance Ranking (28 Features)" width="700">
+</p>
 
 ### SHAP Dependence plot
 
 **Most important feature overall: m_bb**
 
-![Dependence Plot](plots/Most%20important%20feature%20dependence%20plot.png)
+<p align="center">
+  <img src="plots/Most%20important%20feature%20dependence%20plot.png" alt="SHAP Dependence Plot for m_bb" width="700">
+</p>
 
 ### SHAP Summary Plot - (7 Features)
 
-![SHAP Summary](plots/SHAP%20Summary%20Plot%20-%20High%20level%20features.png)
+<p align="center">
+  <img src="plots/SHAP%20Summary%20Plot%20-%20High%20level%20features.png" alt="SHAP Summary Plot (7 High-Level Features)" width="700">
+</p>
 
 ### SHAP Feature Importance Ranking - (7 Features)
 
-![SHAP Importance](plots/SHAP%20Feature%20Importance%20Ranking%20(7%20Features).png)
+<p align="center">
+  <img src="plots/SHAP%20Feature%20Importance%20Ranking%20(7%20Features).png" alt="SHAP Feature Importance Ranking (7 High-Level Features)" width="700">
+</p>
 
 **Learning Curve - Results**
 
@@ -190,15 +206,21 @@ These results align with known physics expectations regarding Higgs boson decay 
 
 ### Learning Curve - Tuned XGBoost
 
-![Learning curve](plots/Learning%20Curve%20-%20Tuned%20XGBoost.png)
+<p align="center">
+  <img src="plots/Learning%20Curve%20-%20Tuned%20XGBoost.png" alt="Learning Curve for Tuned XGBoost" width="700">
+</p>
 
 ### Training Time vs Dataset Size
 
-![Training Time vs Dataset Size](plots/Training%20Time%20vs%20Dataset%20Size%20-%20learning%20curve.png)
+<p align="center">
+  <img src="plots/Training%20Time%20vs%20Dataset%20Size%20-%20learning%20curve.png" alt="Training Time vs Dataset Size" width="700">
+</p>
 
 ### Early stopping Iteration vs Dataset Size
 
-![Early stopping Iteration vs Dataset Size](plots/Early-Stopping%20Iteration%20vs%20Dataset%20Size%20-%20learning%20curve.png)
+<p align="center">
+  <img src="plots/Early-Stopping%20Iteration%20vs%20Dataset%20Size%20-%20learning%20curve.png" alt="Early Stopping Iteration vs Dataset Size" width="700">
+</p>
 
 **Key Findings**
 
