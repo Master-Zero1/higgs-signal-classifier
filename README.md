@@ -20,8 +20,8 @@ This project investigate the classification of Higgs boson signal events from ba
 ## Research Questions
 1. How does modern XGBoost perform compared to Baldi at el. (2014) BDT, NN, and DNN -> How much classical ML improved?
 2. Which physics features actually drive the classification?
-3. How much information is contained in low-level detector features vesus high-level physics engineered features?
-4. How much trainin data is required before performance begins to saturate?
+3. How much information is contained in low-level detector features versus high-level physics engineered features?
+4. How much training data is required before performance begins to saturate?
 
 ---
 
