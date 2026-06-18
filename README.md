@@ -331,11 +331,144 @@ The highest performance was achieved using all 28 features
 └── README.md
 
 ```
-
 ---
 
 ## Conclusion
 Modern XGBoost substantially outperforms the original BDT or the shallow NN and very close results to the DNN reported by Baldi et al. while providing interpretable feature attributions through SHAP. The learning curve further demonstrates that predictive performance continues to improve with additional training data, although gains diminish at larger scales.
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<Master-Zero1>/higgs-signal-classifier.git
+cd higgs-signal-classifier
+```
+
+### 2. Create a virtual environment (optional but recommended)
+
+**Windows**
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Dataset
+
+The HIGGS dataset is available from the UCI Machine Learning Repository.
+
+Download the dataset from:
+
+[https://archive.ics.uci.edu/dataset/280/higgs](https://archive.ics.uci.edu/dataset/280/higgs)
+
+Place the downloaded CSV file inside:
+
+```
+data/raw/
+```
+
+The repository does not include the dataset because of its large size (~2.6 GB compressed, ~7.5 GB extracted).
+
+---
+
+## Running the Project
+
+Run the notebooks in the following order:
+
+1. `01_data_analysis.ipynb`
+   - Load the dataset
+   - Rename features
+   - Create train, validation and test splits
+
+2. `02_eda_plots.ipynb`
+   - Exploratory data analysis
+   - Distribution plots
+   - Correlation matrix
+
+3. `03_ml_pipeline.ipynb`
+   - Feature preprocessing
+   - Train/validation/test preparation
+
+4. `04_ml_models.ipynb`
+   - Logistic Regression baseline
+   - Default XGBoost
+   - Hyperparameter tuning
+   - Final model evaluation
+
+5. `05_shap_analysis.ipynb`
+   - SHAP summary plots
+   - Feature importance
+   - Dependence plots
+
+6. `06_learning_curve.ipynb`
+   - Learning curve analysis
+   - Training time analysis
+   - Early stopping analysis
+
+---
+
+## Model Generation
+
+The trained model files (`.pkl`) are **not included** in this repository because they exceed GitHub's file size limits.
+
+To generate the models, run the notebooks in the following order:
+
+1. `01_data_analysis.ipynb`
+2. `02_eda_plots.ipynb`
+3. `03_ml_pipeline.ipynb`
+4. `04_ml_models.ipynb`
+
+The `04_ml_models.ipynb` notebook trains and evaluates:
+
+- Logistic Regression (21 low-level features)
+- Logistic Regression (7 high-level features)
+- Logistic Regression (28 features)
+- Default XGBoost (21 low-level features)
+- Default XGBoost (7 high-level features)
+- Default XGBoost (28 features)
+- Tuned XGBoost (21 low-level features)
+- Tuned XGBoost (7 high-level features)
+- Tuned XGBoost (28 features)
+
+If desired, the trained models can be saved locally using `joblib`:
+
+```python
+import joblib
+
+joblib.dump(final_xgb_28, "models/final_xgb_28_tuned.pkl")
+```
+
+The generated model files will be saved to your local machine and are not required to reproduce the experiments.
+---
+
+## Reproducing the Results
+
+To reproduce the results reported in this repository:
+
+- Download the HIGGS dataset.
+- Place it in `data/raw/`.
+- Install the dependencies listed in `requirements.txt`.
+- Run the notebooks sequentially in the order listed above.
+
+All reported figures, tables, SHAP visualizations, learning curves, and evaluation metrics can be reproduced using the provided notebooks.
 
 ---
 
