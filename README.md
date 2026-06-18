@@ -106,7 +106,7 @@ A XGBoost model with the best parameter was trained on progressively larger subs
 | Model | 21 features | 7 features | 28 features |
 |-------|--------|---------|-----------------|
 | Logistic Regression | 0.5944 | 0.6451 | 0.6831 |
-| XGBoost (default) | 0.7265 | 0.763 | 0.8240 |
+| XGBoost (default) | 0.7265 | 0.7899 | 0.8240 |
 | XGBoost (tuned) | **0.8007** | **0.7962** | **0.8547** |
 
 **Final Test Performance**
